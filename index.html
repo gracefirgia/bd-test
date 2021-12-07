@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Born Digital Test</title>
+    <script src="js/script.js"></script>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Assemble your team</h1>
+        <hr class="purple-line">
+        <h4 class="grey-text">Make a group consist of 3 people</h4>
+
+        <div class="divider"></div>
+        
+        <div class="row">
+            <input type="text" name="inputedNama" id="inputedNama1" class="input-non-outline"  readonly>
+            <button id="cancelButton" class="cancel-button" onclick="remove1()">
+                <i class="mdi mdi-close red-text"></i>
+            </button>
+        </div>
+        <div class="row">
+            <input type="text" name="inputedNama" id="inputedNama2" class="input-non-outline"  readonly>
+            <button id="cancelButton" class="cancel-button" onclick="remove2()">
+                <i class="mdi mdi-close red-text"></i>
+            </button>
+        </div>
+        <div class="row">
+            <input type="text" name="inputedNama" id="inputedNama3" class="input-non-outline"  readonly>
+            <button id="cancelButton" class="cancel-button" onclick="remove3()">
+                <i class="mdi mdi-close red-text"></i>
+            </button>
+        </div>
+
+        <div class="row">
+            <input type="text" name="nama" id="nama" class="input-field round-text-field" placeholder="Insert name here..." autofocus>
+            <button type="submit" onclick="clickButton()">
+                <i class="mdi mdi-check white-text"></i>
+            </button>
+        </div>
+
+        <div class="divider"></div>
+
+        <button class="green-outlined-disabled" id="submitButton" onclick="submitButton()">
+           Need 3 more people
+        </button>
+
+        <button class="help-button">
+            <i class="mdi mdi-help white-text" style="font-size: 18px;"></i>
+        </button>
+
+        <div class="modal-alert" id="modalBox">
+            <h4 class="green-text">CONGRATULATIONS!</h4>
+            <h3>You've just assembled <br> The Earth Greatest Defender!</h3>
+        </div>
+    </div>
+</body>
+</html>
